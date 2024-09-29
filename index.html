@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <section class="flex justify-center items-center">
+        <div class="bg-slate-300 h-screen w-1/2">
+            <h1 class="text-xl font-semibold p-4">Enter the names :</h1>
+            <ul id="ul-list">
+            </ul>
+        </div>
+        <div  class="bg-slate-200 h-screen w-1/2">
+            <h3 class="text-xl font-semibold p-4">Select the name first:</h3>
+            <div id="new-list" class=""">
+
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./script.js"></script>
+  </body>
+</html>
